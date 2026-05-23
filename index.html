@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EULONIX — We Create Your Wish | Premium Web Design & Development</title>
+<meta name="description" content="EULONIX designs and builds powerful, modern websites, platforms, and digital experiences tailored to your vision." />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+<meta property="og:title" content="EULONIX — We Create Your Wish" />
+<meta property="og:description" content="Premium web design and digital solutions." />
+<meta property="og:image" content="assets/logo.png" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="nav__brand">
+      <img src="assets/logo.png" alt="EULONIX" class="logo-img" />
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/23057062864" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav__cta">Get a Quote</a>
+    <button class="nav__burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero__bg">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <div class="container hero__content">
+    <img src="assets/logo.png" alt="EULONIX" class="hero-logo reveal" />
+    <p class="eyebrow reveal">Digital Excellence · Est. EULONIX</p>
+    <h1 class="hero__title reveal">WE CREATE <span class="gold-text">YOUR WISH</span></h1>
+    <p class="hero__sub reveal">We design and build powerful modern websites, platforms, and digital experiences tailored to your vision.</p>
+    <div class="hero__cta reveal">
+      <a href="#portfolio" class="btn btn--gold">View Our Work</a>
+      <a href="https://wa.me/23057062864" target="_blank" rel="noopener" class="btn btn--ghost">Chat on WhatsApp</a>
+    </div>
+
+    <div class="hero__mock reveal">
+      <div class="mock-window glass">
+        <div class="mock-bar"><span></span><span></span><span></span></div>
+        <div class="mock-body">
+          <div class="mock-line w-60"></div>
+          <div class="mock-line w-40"></div>
+          <div class="mock-grid">
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">About EULONIX</p>
+      <h2>Crafting digital excellence with <span class="gold-text">precision & vision</span></h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>EULONIX is a modern digital solutions company specializing in website design, development, branding, and online experiences for businesses, brands, and individuals. We combine creativity, technology, and strategy to transform ideas into powerful digital products.</p>
+        <p class="muted">Our mission is to elevate African digital craft to a global standard — delivering work that is timeless, performant, and unmistakably premium.</p>
+      </div>
+      <div class="stats">
+        <div class="stat glass reveal"><span class="stat__num" data-count="120">0</span><span class="stat__lbl">Projects Completed</span></div>
+        <div class="stat glass reveal"><span class="stat__num" data-count="95">0</span><span class="stat__lbl">Happy Clients</span></div>
+        <div class="stat glass reveal"><span class="stat__num" data-count="140">0</span><span class="stat__lbl">Websites Delivered</span></div>
+        <div class="stat glass reveal"><span class="stat__num" data-count="12">0</span><span class="stat__lbl">Countries Served</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section section--alt">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">What We Do</p>
+      <h2>Services tailored to <span class="gold-text">your ambition</span></h2>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Our <span class="gold-text">Portfolio</span></h2>
+    </div>
+    <div class="filters reveal" id="filters"></div>
+    <div class="portfolio-grid" id="portfolioGrid">
+      <div class="loading">Loading projects…</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section section--alt">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">How We Work</p>
+      <h2>A refined <span class="gold-text">4-step process</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="step glass reveal"><span class="step__num">01</span><h3>Consultation</h3><p>We listen, learn, and define the vision behind your project.</p></div>
+      <div class="step glass reveal"><span class="step__num">02</span><h3>Planning & Design</h3><p>Strategy, UX, and high-end visual design tailored to your brand.</p></div>
+      <div class="step glass reveal"><span class="step__num">03</span><h3>Development</h3><p>Robust, scalable, and pixel-perfect builds with modern tech.</p></div>
+      <div class="step glass reveal"><span class="step__num">04</span><h3>Launch & Support</h3><p>We deploy, optimize, and stay with you after go-live.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Kind Words</p>
+      <h2>What clients <span class="gold-text">say</span></h2>
+    </div>
+    <div class="testi-wrap reveal">
+      <div class="testi-track" id="testiTrack"></div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-inner glass reveal">
+    <h2>Ready to bring your idea to <span class="gold-text">life?</span></h2>
+    <p>Let EULONIX transform your vision into a powerful digital experience.</p>
+    <a href="https://wa.me/23057062864" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Start Your Project on WhatsApp</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section--alt">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Let's build something <span class="gold-text">extraordinary</span></h2>
+      <ul class="contact-list">
+        <li><strong>WhatsApp</strong><a href="https://wa.me/23057062864" target="_blank" rel="noopener">+230 5706 2864</a></li>
+        <li><strong>Email</strong><a href="mailto:hello@eulonix.com">hello@eulonix.com</a></li>
+        <li><strong>Phone</strong><a href="tel:+23057062864">+230 5706 2864</a></li>
+        <li><strong>Location</strong><span>Mauritius · Serving worldwide</span></li>
+      </ul>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="X">X</a>
+        <a href="#" aria-label="Behance">BE</a>
+      </div>
+    </div>
+    <form class="contact-form glass reveal" onsubmit="return handleContact(event)">
+      <label>Name<input required type="text" name="name" placeholder="Your name" /></label>
+      <label>Email<input required type="email" name="email" placeholder="you@example.com" /></label>
+      <label>Phone<input type="tel" name="phone" placeholder="Optional" /></label>
+      <label>Project Details<textarea required name="message" rows="5" placeholder="Tell us about your project…"></textarea></label>
+      <button type="submit" class="btn btn--gold">Send via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <img src="assets/logo.png" alt="EULONIX" class="logo-img logo-img--footer" />
+      <p class="muted">We Create Your Wish</p>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="https://wa.me/23057062864" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:hello@eulonix.com">hello@eulonix.com</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <div class="socials"><a href="#">IG</a><a href="#">IN</a><a href="#">X</a><a href="#">BE</a></div>
+    </div>
+  </div>
+  <div class="footer__bottom container"><span>© <span id="year"></span> EULONIX. All rights reserved.</span></div>
+</footer>
+
+<!-- WhatsApp floating -->
+<a href="https://wa.me/23057062864" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M19.11 17.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM16.05 5.33c-5.9 0-10.7 4.79-10.7 10.69 0 1.88.49 3.71 1.42 5.32L5 27l5.83-1.52a10.66 10.66 0 0 0 5.21 1.32h.01c5.9 0 10.7-4.79 10.7-10.69s-4.8-10.78-10.7-10.78z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
