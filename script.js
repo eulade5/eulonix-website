@@ -111,10 +111,10 @@ loadProjects();
 
 /* TESTIMONIALS */
 const testimonials = [
-  {q:"EULONIX delivered beyond our expectations. The site feels like luxury.",who:"Amara K.",role:"Founder, Maison Noir"},
-  {q:"Beautifully crafted, fast, and perfectly aligned with our brand.",who:"David R.",role:"CEO, Aurum Holdings"},
-  {q:"A truly premium experience from start to finish. Highly recommended.",who:"Sofia L.",role:"Director, Studio Lume"},
-  {q:"They turned our vision into a digital masterpiece. Five stars.",who:"Jean P.",role:"Owner, Saveur"},
+  {q:"EULONIX delivered beyond our expectations. The site feels like luxury.",who:"Amara K.",role:" White Fort Plaza"},
+  {q:"Beautifully crafted, fast, and perfectly aligned with our brand.",who:"Alexandre.S ",role:"CEO, Wingpay Group"},
+  {q:"A truly premium experience from start to finish. Highly recommended.",who:"Sofia L.",role:" Amazing tools company"},
+  {q:"They turned our vision into a digital masterpiece. Five stars.",who:"Eulade",role:"Founder at Eulade"},
 ];
 const track = document.getElementById('testiTrack');
 const dots = document.getElementById('testiDots');
