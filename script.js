@@ -100,7 +100,7 @@ function renderProjects(list){
           <div class="proj__cat">${p.category||'Project'}</div>
           <h3>${p.title||'Untitled'}</h3>
           <p>${p.description||''}</p>
-          ${p.live_url?`<a class="proj__link" href="${p.live_url}" target="_blank" rel="noopener">Visit Site →</a>`:''}
+          ${p.live_url ? `<a class="btn btn--gold btn--sm proj__link" href="${p.live_url}" target="_blank" rel="noopener">Visit Site →</a>` : ''}
         </div>
       </article>`).join('');
     grid.querySelectorAll('.reveal').forEach(el=>io.observe(el));
